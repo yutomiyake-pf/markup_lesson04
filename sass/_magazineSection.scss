@@ -1,0 +1,54 @@
+@use "vars";
+
+.magazineSection {
+  width: 100%;
+  text-align: center;
+  margin: 60px auto 0 auto;
+  @media screen and (max-width: vars.$breakPoint) {
+    padding: 0 20px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__imageLists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+
+    @media screen and (max-width: vars.$breakPoint) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__list {
+    width: 49%;
+    position: relative;
+
+    @media screen and (max-width: vars.$breakPoint) {
+      width: 100%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__imageInfoWrap {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+  }
+}

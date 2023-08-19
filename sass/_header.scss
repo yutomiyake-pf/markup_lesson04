@@ -1,0 +1,12 @@
+.header {
+  width: 100vw;
+  height: 100vh;
+  background: url("../public/image/mainvisual.jpg") no-repeat center center;
+  position: relative;
+
+  &__logo {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+}

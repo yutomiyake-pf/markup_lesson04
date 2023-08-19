@@ -1,0 +1,20 @@
+@use "mixins";
+
+.fashionSection {
+  width: 100%;
+  height: 520px;
+  text-align: center;
+  margin: 60px auto 0 auto;
+  padding-top: 60px;
+  background-image: url(../public/image/fashion.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  &__title,
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  @include mixins.readMoreLink;
+}

@@ -1,0 +1,26 @@
+@use "vars";
+
+body {
+  font-family: Arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo,
+    sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+main {
+  max-width: vars.$contentWidth;
+  padding: 0 5px;
+  margin: 0 auto;
+}
